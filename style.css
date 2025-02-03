@@ -1,0 +1,123 @@
+#yesButton, #noButton {
+    background-color: #ff90b3; 
+    color: white;
+    padding: 1em 2em;
+    border-radius: 15px;
+    margin: 2vw;
+    min-width: 150px;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#yesButton {
+    background-color: #ffa7c4; 
+}
+
+#yesButton:hover {
+    background-color: #ff8aa8; 
+    transform: scale(1.1);
+}
+
+#noButton {
+    background-color: #ff6f9f; 
+}
+
+#noButton:hover {
+    background-color: #ff4f7d; 
+    transform: scale(1.1);
+}
+
+header {
+    font-family: 'Valentine Cute', cursive;
+    margin: 20px;
+    font-size: 5vh;
+}
+
+button {
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.download-button {
+    background-color: #ff90b3;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+    background-color: #ff6f9f;
+    transform: scale(1.1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+body {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    gap: 2vw;
+    margin-top: 5vh;
+}
+
+#yesButton.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: #ffa7c4;
+    color: white;
+    box-sizing: border-box;
+}
+
+.sanrio-gif {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    max-height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
